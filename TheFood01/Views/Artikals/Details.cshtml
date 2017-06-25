@@ -1,0 +1,42 @@
+﻿@model TheFood01.Models.Artikal
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Artikal</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Ime)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Ime)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Edm)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Edm)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
